@@ -25,7 +25,7 @@ def emp(id):
 	try:
 		conn = mysql.connect()
 		cursor = conn.cursor(pymysql.cursors.DictCursor)
-		cursor.execute("SELECT id, name, url_image, price, category FROM product WHERE id =%s", id)
+		cursor.execute("SELECT id, name, url_image, price, category FROM product WHERE category =%s", id)
 		empRow = cursor.fetchone()
 		respone = jsonify(empRow)
 		respone.status_code = 200
