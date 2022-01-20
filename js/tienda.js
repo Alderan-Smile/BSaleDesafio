@@ -1,7 +1,15 @@
 function putGreeting() {
-    var p_hi;
+    var field, name, p_hi;
+    field = $('#who');
+    name = field.val();
     p_hi = $('#hi');
-    p_hi.text('Hello world!');
+    p_hi.text('Hello ' + name + '!');
 }
 
-$(document).ready(putGreeting);
+function configureSubmit() {
+    var b;
+    b = $('#done');
+    b.click(putGreeting);
+}
+
+$(document).ready(configureSubmit);
