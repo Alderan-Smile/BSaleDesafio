@@ -1,4 +1,4 @@
-var getproduct = 'https://xq17f6g7gc.execute-api.us-east-1.amazonaws.com/dev/product/'
+var getproduct = 'https://z8ohhpcp9i.execute-api.us-east-1.amazonaws.com/dev/product/'
 var getcategory = 'https://xq17f6g7gc.execute-api.us-east-1.amazonaws.com/dev/category/'
 
 $('#buscar').val("").trigger("input")
