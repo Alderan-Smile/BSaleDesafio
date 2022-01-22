@@ -8,7 +8,10 @@ $('#buscar').on('input', function(){
 });
 
 async function getcontent(val){
-    const response = await fetch(getproduct);
+    const response = await fetch(getproduct, {
+        method: 'GET',
+        mode: 'no-cors'
+    });
     const row = await response.json();
     console.log(row)
 }
