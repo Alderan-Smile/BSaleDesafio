@@ -4,9 +4,11 @@ var myHeaders = new Headers();
 var myInit = {
                 mode: 'cors',
                 headers: {
+                    "Access-Control-Allow-Origin": "*",
                     "Access-Control-Allow-Headers" : "Origin, X-Requested-With, Content-Type, Accept",
-                    'Access-Control-Allow-Origin': '*',
-                    "Access-Control-Allow-Methods": "OPTIONS,GET"
+                    "Access-Control-Allow-Credentials": "false",
+                    "Content-Type" : "application/json",
+                    "Access-Control-Allow-Methods": "OOPTION,GET"
                 },
                 cache: 'default'
             };
@@ -18,10 +20,10 @@ $('#buscar').on('input', function(){
     alert("changed");
 });
 
-async function getcontent(val){
+async function getcontent(){
     const response = await fetch(myRequest);
     const row = await response.json();
-    console.log(row)
+    console.log(row);
 }
 
 /*function putGreeting() {
