@@ -3,7 +3,7 @@ var getcategory = 'https://xq17f6g7gc.execute-api.us-east-1.amazonaws.com/dev/ca
 var myHeaders = new Headers();
 var myInit = {  method: 'GET',
                 headers: myHeaders,
-                mode: 'cors',
+                mode: 'no-cors',
                 cache: 'default',
                 headers: {
                     'Access-Control-Allow-Origin': '*'
