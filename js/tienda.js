@@ -3,8 +3,12 @@ var getcategory = 'https://xq17f6g7gc.execute-api.us-east-1.amazonaws.com/dev/ca
 var myHeaders = new Headers();
 var myInit = {  method: 'GET',
                 headers: myHeaders,
-                mode: 'no-cors',
-                cache: 'default'};
+                mode: 'cors',
+                cache: 'default',
+                headers: {
+                    'Access-Control-Allow-Origin': '*'
+                }
+            };
 var myRequest = new Request(getproduct,myInit);
 
 $('#buscar').val("").trigger("input")
