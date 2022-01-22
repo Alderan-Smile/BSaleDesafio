@@ -1,5 +1,11 @@
 var getproduct = 'https://xq17f6g7gc.execute-api.us-east-1.amazonaws.com/dev/product/'
 var getcategory = 'https://xq17f6g7gc.execute-api.us-east-1.amazonaws.com/dev/category/'
+var myHeaders = new Headers();
+var myInit = {  method: 'GET',
+                headers: myHeaders,
+                mode: 'no-cors',
+                cache: 'default'};
+var myRequest = new Request(getproduct,myInit);
 
 $('#buscar').val("").trigger("input")
 
@@ -8,14 +14,7 @@ $('#buscar').on('input', function(){
 });
 
 async function getcontent(val){
-    const response = await fetch(getproduct, {
-        method: 'GET',
-        mode: 'no-cors',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(data)
-    });
+    const response = await fetch(myRequest);
     const row = await response.json();
     console.log(row)
 }
