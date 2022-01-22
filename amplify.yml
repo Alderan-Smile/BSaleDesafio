@@ -1,0 +1,24 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - yarn install
+    build:
+      commands:
+        - yarn run build
+  artifacts:
+    baseDirectory: /
+    files:
+      - '**/*'
+  cache:
+    paths: []
+  customHeaders:
+    - pattern: '*.js'
+      headers:
+        - key: 'Access-Control-Allow-Origin'
+          value: '*'
+    - pattern: '/js/*.js'
+      headers:
+        - key: 'Access-Control-Allow-Origin'
+          value: '*'
