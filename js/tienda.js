@@ -13,7 +13,8 @@ async function getcontent(val){
         mode: 'no-cors',
         headers: {
             'Content-Type': 'application/json'
-        }
+        },
+        body: JSON.stringify(data)
     });
     const row = await response.json();
     console.log(row)
