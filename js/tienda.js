@@ -12,7 +12,7 @@ async function getcontent(val){
         method: 'GET',
         mode: 'no-cors'
     });
-    const row = await response.json();
+    const row = await response;
     console.log(row)
 }
 
