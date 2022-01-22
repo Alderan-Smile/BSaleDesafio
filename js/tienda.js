@@ -10,9 +10,12 @@ $('#buscar').on('input', function(){
 async function getcontent(val){
     const response = await fetch(getproduct, {
         method: 'GET',
-        mode: 'no-cors'
+        mode: 'no-cors',
+        headers: {
+            'Content-Type': 'application/json'
+        }
     });
-    const row = await response.json;
+    const row = await response.json();
     console.log(row)
 }
 
