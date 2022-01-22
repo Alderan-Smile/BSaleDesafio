@@ -15,7 +15,7 @@ $('#buscar').on('input', function(){
 
 async function getcontent(val){
     const response = await fetch(myRequest);
-    const row = await response.json();
+    const row = await response.blob();
     console.log(row)
 }
 
