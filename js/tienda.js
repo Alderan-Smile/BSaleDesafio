@@ -4,10 +4,7 @@ var myHeaders = new Headers();
 var myInit = {  method: 'GET',
                 headers: myHeaders,
                 mode: 'no-cors',
-                cache: 'default',
-                headers: {
-                    'Access-Control-Allow-Origin': '*'
-                }
+                cache: 'default'
             };
 var myRequest = new Request(getproduct,myInit);
 
@@ -19,7 +16,7 @@ $('#buscar').on('input', function(){
 
 async function getcontent(val){
     const response = await fetch(myRequest);
-    const row = await response.blob();
+    const row = await response.json();
     console.log(row)
 }
 
