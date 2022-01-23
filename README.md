@@ -19,4 +19,5 @@ La barra de búsqueda, sin necesidad de realizar ninguna acción mas que escribi
 
 Repositorio de api rest [GitHub Repository](https://github.com/Alderan-Smile/ApiBSale)<br/>
 Api Rest Hosteada por [AWS Api Gateway](https://lwg7yig1ta.execute-api.us-east-1.amazonaws.com/dev/product/)<br/><br/>
+Versiones de la web [GitHub Commits](https://github.com/Alderan-Smile/BSaleDesafio/commits/main)<br/>
 Web JS Hosteada por [AWS Amplify](https://main.d3fpblgrtdfmry.amplifyapp.com/)
