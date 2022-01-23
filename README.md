@@ -17,5 +17,5 @@ Los datos para rellenar la tabla y realizar la búsqueda son obtenidos desde una
 
 La barra de búsqueda, sin necesidad de realizar ninguna acción mas que escribir o borrar, interviene inmediatamente en los datos de la tabla cambiando la consulta realizada para su rellenado.
 
-[AWS Api Gateway](https://lwg7yig1ta.execute-api.us-east-1.amazonaws.com/dev/product/)
-[AWS Amplify Page](https://main.d3fpblgrtdfmry.amplifyapp.com/)
+Api Rest Hosteada por [AWS Api Gateway](https://lwg7yig1ta.execute-api.us-east-1.amazonaws.com/dev/product/)
+Web JS Hosteada por [AWS Amplify](https://main.d3fpblgrtdfmry.amplifyapp.com/)
