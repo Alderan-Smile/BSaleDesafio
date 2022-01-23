@@ -3,13 +3,7 @@ var getcategory = 'https://lwg7yig1ta.execute-api.us-east-1.amazonaws.com/dev/ca
 var myHeaders = new Headers();
 var myInit = {
                 mode: 'cors',
-                headers: {
-                    "Access-Control-Allow-Origin": "*",
-                    "Access-Control-Allow-Headers" : "Origin, X-Requested-With, Content-Type, Accept",
-                    "Access-Control-Allow-Credentials": "false",
-                    "Content-Type" : "application/json",
-                    "Access-Control-Allow-Methods": "OOPTION,GET"
-                },
+                headers: {},
                 cache: 'default'
             };
 var myRequest = new Request(getproduct,myInit);

@@ -1,4 +1,4 @@
-var getproduct = 'https://lwg7yig1ta.execute-api.us-east-1.amazonaws.com/dev/product/'
+/*var getproduct = 'https://lwg7yig1ta.execute-api.us-east-1.amazonaws.com/dev/product/'
 var getcategory = 'https://lwg7yig1ta.execute-api.us-east-1.amazonaws.com/dev/category/'
 var myHeaders = new Headers();
 var myInit = {
@@ -16,4 +16,4 @@ fetch(myRequest)
 })
 .catch(function(error) {
     console.log(error);
-});
+});*/
