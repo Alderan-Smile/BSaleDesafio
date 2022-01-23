@@ -32,11 +32,12 @@ async function getitems(val){
                 temp+="<h1>"+itemdata.category+"</h1>"
             }
             if(aux==0){
+                temp+="<br><br>"
                 temp+="<tr>"
             }else if(itemdata.category!=cataux){
                 temp+="</tr>"
                 temp+="<br><br>"
-                temp+="<h1>"+itemdata.category+"</h1>"
+                temp+="<h1 text-transform:uppercase>"+itemdata.category+"</h1>"
                 temp+="<tr>"
                 aux=0;
             }
